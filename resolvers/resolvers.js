@@ -18,17 +18,6 @@ function mergeObject(objBase, ObjUpdate) {
 	}
 }
 
-function getNextSequenceValue(sequenceName){
-
-   var sequenceDocument = db.counters.findAndModify({
-      query:{_id: sequenceName },
-      update: {$inc:{sequence_value:1}},
-      new:true
-   });
-  
-   return sequenceDocument.sequence_value;
-}
-
 export default {
   Query: {
 
@@ -60,39 +49,30 @@ export default {
     newDefinition: async (parent, args, {models}) => {
       try{
 
-        //const glosario = await new models.Glosario(args.glosario).save();
+        let user = await models.Usuario.find({user:args.glosario.user.user,pass:args.glosario.user.pass});
+        if(user.length==0){
+          return {
+            success: false,/*Se enviaron vacios o null*/
+            errors: formatErrors({path:"user ^ pass",message:"Usuario no válido"})
+          };
+        }
 
-        //
-
-
-        const counter = await models.Counters.findAndModify(
-          { _id: 'contratos' }, [], { $inc: { sequence_value: 1 } },{"new":true/*, upsert:true*/}
-          /*CallBack => ,function (err, counter) {
-            if (err) throw err;
-            console.log('updated, counter is ',counter.value.sequence_value);          
-          }*/);
+        /*const counter = await models.Counters.findAndModify(
+          { _id: 'contratos' }, [], { $inc: { sequence_value: 1 } },{"new":true/*, upsert:true*//*}
+          //CallBack => ,function (err, counter) {
+          //  if (err) throw err;
+          //  console.log('updated, counter is ',counter.value.sequence_value);          
+          //});
 
         if(counter.value){
           console.log("out: ",counter.value.sequence_value);
         }else{
           console.log("No existe. Se crea desde el valor 1000");
           const counter = await new models.Counters({_id:"contratos",sequence_value:1000}).save();
-        }
-        
-
-        /*if(value == undefined){
-          console.log("chingasa");
-          
         }*/
         
-
-        /*var sequenceDocument =  await models.Counters.findAndModify({
-          query:{_id: "productid" },
-          update: {$inc:{sequence_value:1}},
-          new:true
-        });
-        console.log(sequenceDocument);*/
-        //const glosario = await new models.Glosario(args.glosario).save();
+        const glosario = await new models.Glosario(args.glosario).save();
+        console.log(glosario);
         return {
             success: true,
             errors: []
@@ -106,6 +86,16 @@ export default {
     },
     updateDefinition: async (parent, args, {models}) => {
       try{
+
+        let user = await models.Usuario.find({user:args.glosario.user.user,pass:args.glosario.user.pass});
+        if(user.length==0){
+          return {
+            success: false,/*Se enviaron vacios o null*/
+            errors: formatErrors({path:"user ^ pass",message:"Usuario no válido1"})
+          };
+        }
+
+
         if( (args.glosario.title=='' || args.glosario.title == null) 
           && (args.glosario.definition=='' || args.glosario.definition == null)  ){
           return {

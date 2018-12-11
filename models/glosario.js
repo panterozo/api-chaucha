@@ -5,7 +5,7 @@ import validate from 'mongoose-validator';
 
 var Schema = mongoose.Schema;
 
-const userSchema = Schema({
+const glosarioSchema = Schema({
   
   title: String,
   definition: String,
@@ -19,4 +19,4 @@ const userSchema = Schema({
 })
 
 
-module.exports = mongoose.model('Glosario', userSchema, 'Glosario');
+module.exports = mongoose.model('Glosario', glosarioSchema, 'Glosario');

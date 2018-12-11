@@ -9,13 +9,20 @@ export default `
 
   input GlosarioInputCreate{
     title: String!
-    definition: String!    
+    definition: String!   
+    user: Usuario! 
   }
 
   input GlosarioInputUpdate{
     _id: String!
     title: String
     definition: String
+    user: Usuario!
+  }
+
+  input Usuario{
+    user: String!
+    pass: String!
   }
 
 
