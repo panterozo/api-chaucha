@@ -75,6 +75,7 @@
 {"title":"Private Key","definition":"Dirección privada, cadena aleatoria de 32 [bytes](#Byte) que es utilizada para firmar [transacciones](#Transacción)"},
 {"title":"Protocolo","definition":"Conjunto de reglas y estándares que controlan la comunicación entre participantes en una red"},
 {"title":"PubkeyHash","definition":"[Hash](#Hash) de la representación pública de una [llave privada](#Private-key)"},
+{"title":"Pump","definition":"Subida abrupta del precio de una moneda"},  
 {"title":"Quirquincho","definition":"Nombre dado al bot en grupo oficial de proyecto chaucha en telegram @chaucha"},
 {"title":"Recompensa de bloque","definition":"Cantidad de [criptomonedas](#Criptomoneda) generadas por cada nuevo [bloque minado](#Minería) en la red"},
 {"title":"Red de criptomonedas","definition":"[red P2P](#P2P), en donde los participantes administran un [Blockchain](#Blockchain) público de manera descentralizada en base a un conjunto de [reglas de consenso](#Reglas-de-consenso)"},
