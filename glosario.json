@@ -6,6 +6,7 @@
 {"title":"Balance","definition":"Cantidad de [criptomonedas](#Criptomoneda) almacenadas en una [address](#Address)"},
 {"title":"Base58","definition":"[Algoritmo](#Algoritmo) para representar [bytes](#Byte) en texto plano"},
 {"title":"BIP","definition":"_Bitcoin Improvement Proposal_, propuesta de mejora para [Bitcoin](#Bitcoin)"},
+{"title":"Bisq","definition":"Software de código libre utilizado para el intercambio de [criptomonedas](#Criptomoneda) de manera descentralizada"},
 {"title":"Bitcoin","definition":"Primera propuesta de [criptomoneda](#Criptomoneda), desarrollada por [Satoshi](#Satoshi) Nakamoto en el año 2008"},
 {"title":"Bitcoin Core","definition":"Software de referencia para la implementación de la red de [Bitcoin](#Bitcoin)"},
 {"title":"Block Explorer","definition":"Plataforma que permite visualizar la información que contiene un [Blockchain](#Blockchain)"},
