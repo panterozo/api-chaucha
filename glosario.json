@@ -48,6 +48,7 @@
 {"title":"Hashrate","definition":"Cantidad de [hashes](#Hash) por segundo que puede calcular una máquina"},
 {"title":"HODL","definition":"No vender [criptomonedas](#Criptomoneda), confusión con la palabra HOLD (mantener en inglés)"},
 {"title":"Lightning Network","definition":"Propuesta de [sidechain](#Sidechain) para [Bitcoin](#Bitcoin), que permite generar canales de pagos entre sus participantes"},
+{"title":"Litecoin","definition":"Si Bitcoin fuese el Oro, Litecoin sería la plata. Creada por Charlie Lee en 2011 es el proyecto base de Chaucha."},
 {"title":"Magic Number","definition":"Cadena de 4 [bytes](#Byte) que representan el origen de un mensaje en las [redes de criptomonedas](#Red-de-criptomonedas)"},
 {"title":"Mainnet","definition":"[Red principal](#Red-de-criptomonedas) de una criptomoneda"},
 {"title":"Mempool","definition":"Memoria local que almacena [transacciones](#Transacción) sin [minar](#Minería)"},
