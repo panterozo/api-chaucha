@@ -19,7 +19,7 @@
 {"title":"Byzantine Fault Tolerance","definition":"Sistema tolerante a fallos o ataques malintencionados"},
 {"title":"Chain Split","definition":"División del registro histórico de transacciones en una [red de criptomonedas](#Red-de-criptomonedas), que produce la existencia de dos [Blockchains](#Blockchain) incompatibles que mantienen un historial pasado en común."},
 {"title":"Chaucha","definition":"Proyecto de software libre originado en Chile para aprender sobre criptomonedas"},
-{"title":"Chauchera","definition":"Monedero de la criptomoneda [chaucha](#Chaucha). Es el luga donde se guardan las chauchas"},
+{"title":"Chauchera","definition":"Monedero de la criptomoneda [chaucha](#Chaucha). Es el lugar donde se guardan las chauchas"},
 {"title":"Coinbase","definition":"Información de entrada de una [transacción](#Transacción), que es utilizado por el [Genesis Block](#Genesis-Block) para establecer el inicio de una nueva [red de criptomonedas](#Red-de-criptomonedas)"},
 {"title":"Confirmación","definition":"Cantidad de [bloques](#Block) [minados](#Minería) desde la inclusión de una [transacción](#Transacción) en el [Blockchain](#Blockchain)"},
 {"title":"Consenso","definition":"Acuerdo de una regla por todos los participantes de un sistema"},
