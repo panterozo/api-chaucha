@@ -1,5 +1,6 @@
 [
 {"title":"Address","definition":"Dirección receptora de [criptomonedas](#Criptomoneda)"},
+{"title":"Dice","definition":"Juego utilizado en grupo de telegram para apostar chauchas en la tirada de un dado"},
 {"title":"Algoritmo","definition":"Serie de pasos para realizar una acción"},
 {"title":"Altcoin","definition":"[Criptomoneda](#Criptomoneda) que nace de una reinterpretación de la idea original de [Bitcoin](#Bitcoin)"},
 {"title":"Ataque del 51%","definition":"Modificación temporal del [Blockchain](#Blockchain), que es realizado por un [minero](#Minería) atacante que aporta más del 51% del [hashrate](#Hashrate) total de la red"},
